@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Ford Parts Utility{% endblock %}
+{% block content%}
+
+<form method="POST">
+    <div class="row", style="padding: 20px">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First Part Name" aria-label="First Part Name", name="fpname">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First Part Number" aria-label="First Part Number", name="fpnum">
+        </div>
+      </div>
+    
+    <div class="row", style="padding: 20px">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Second Part Name" aria-label="Second Part Name", name="spname">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Second Part Number" aria-label="Second Part Number", name="spnum">
+        </div>
+      </div>
+    
+    <div class="row", style="padding: 20px">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Third Part Name" aria-label="Third Part Name", name="tpname">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Third Part Number" aria-label="Third Part Number", name="tpnum">
+        </div>
+      </div>
+    
+    <div class="row", style="padding: 20px">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Fourth Part Name" aria-label="Fourth Part Name", name="fopname">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Fourth Part Number" aria-label="Fourth Part Number", name="fopnum">
+        </div>
+      </div>
+    
+    <div class="row", style="padding: 20px">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Fifth Part Name" aria-label="Fifth Part Name", name="fifpname">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Fifth Part Number" aria-label="Fifth Part Number", name="fifpnum">
+        </div>
+      </div>
+    <div class="mx-auto", style="width: 75px;">
+      <button type="submit" class="btn btn-success">Search</button>
+    </div>
+    
+
+</form>
+
+<form>
+    <div class="form-group", style="padding: 0px 200px 0px 200px">
+        <label for="exampleFormControlTextarea1">Output</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" text="test" rows="12">{{ result }}</textarea>
+      </div>
+    <div class="mx-auto", style="width: 50px;">
+      <button type="button" class="btn btn-dark">Copy Phrase</button>
+      </div>
+    <div class="mx-auto", style="width: 75px; padding:20px">
+      <button type="button" class="btn btn-dark">Reset</button>
+      </div>    
+</form>
+
+{% endblock %}
